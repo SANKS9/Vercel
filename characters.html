@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الشخصيات</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:sans-serif;
+      background:#f4f7f4;
+    }
+
+    header{
+      background:linear-gradient(to left,#4ab44e,#2e7d32);
+      padding:15px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      box-shadow:0 3px 10px rgba(0,0,0,0.15);
+      position:sticky;
+      top:0;
+    }
+
+    .logo{
+      color:white;
+      font-size:28px;
+      font-weight:bold;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-size:17px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#dcedc8;
+    }
+
+    .logo-img{
+      width:70px;
+      height:70px;
+      border-radius:50%;
+      object-fit:cover;
+    }
+
+    .section-title{
+      text-align:center;
+      color:#2e7d32;
+      font-size:34px;
+      margin-top:60px;
+      margin-bottom:40px;
+    }
+
+    .main-characters{
+      width:90%;
+      max-width:1000px;
+      margin:0 auto 60px;
+      display:flex;
+      gap:30px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    .big-card{
+      background:white;
+      padding:40px;
+      border-radius:15px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      transition:0.3s;
+      text-align:center;
+      width:100%;
+      max-width:400px;
+      position:relative;
+    }
+
+    .big-card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .icon-circle{
+      width:120px;
+      height:120px;
+      background:linear-gradient(135deg,#4ab44e,#2e7d32);
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin:0 auto 25px;
+      box-shadow:0 4px 12px rgba(74,180,78,0.3);
+      overflow:hidden;
+    }
+
+    .character-icon{
+      width:90px;
+      height:90px;
+      object-fit:contain;
+      filter:brightness(0) invert(1);
+    }
+
+    .big-card h3{
+      color:#2e7d32;
+      margin-bottom:15px;
+      font-size:26px;
+    }
+
+    .big-card p{
+      line-height:1.8;
+      color:#444;
+      font-size:16px;
+    }
+
+    .container{
+      width:90%;
+      margin:30px auto 60px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+    }
+
+    .character-card{
+      background:white;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      transition:0.3s;
+      text-align:center;
+    }
+
+    .character-card:hover{
+      transform:translateY(-5px);
+    }
+
+    .character-card h3{
+      color:#2e7d32;
+      margin-bottom:10px;
+      font-size:24px;
+    }
+
+    .character-card p{
+      line-height:1.8;
+      color:#444;
+      font-size:16px;
+    }
+
+    .emoji{
+      font-size:60px;
+      margin-bottom:15px;
+    }
+
+    footer{
+      background:#2e7d32;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:40px;
+      font-size:16px;
+    }
+
+    @media(max-width:600px){
+
+      header{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav a{
+        display:inline-block;
+        margin:8px;
+      }
+
+      .section-title{
+        font-size:26px;
+      }
+
+      .main-characters{
+        flex-direction:column;
+        gap:20px;
+      }
+
+      .big-card{
+        max-width:100%;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">🌿 من نفاية الى قيمة</div>
+
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="About_the-campaign.html">عن الحملة</a>
+      <a href="whoa_are_we.html">من نحن</a>
+      <a href="characters.html">الشخصيات</a>
+    </nav>
+
+    <img src="images/iconweb.png" class="logo-img">
+
+  </header>
+
+  <h2 class="section-title">شخصيات الحملة البيئية</h2>
+
+  <div class="main-characters">
+
+    <div class="big-card">
+      <div class="icon-circle">
+        <img src="images/female-character.png" alt="شخصية أنثى" class="character-icon">
+      </div>
+      <h3>اسم : دانة , عمر : 17 , شخصيتها : مبدعة وذكية</h3>
+      <p> دانة فتاه مبدعة تريد البحث عن موقع بيئي تستطيع نشره بين صديقاته لزيادة الوعي البيئي وتحتاج ايضا موقع يوفر لها البدائل التي تحتاجها بشكل مبسط وليس معقد
+
+
+      </p>
+    </div>
+
+    <div class="big-card">
+      <div class="icon-circle">
+        <img src="images/male-character.png" alt="شخصية ذكر" class="character-icon">
+      </div>
+      <h3> اسم : احمد , عمر 16 , شخصيته : طموح ولديه اهداف</h3>
+      <p>
+        يمثل الشاب الحماسي الذي يقود الحملة ويدعو الجميع للمشاركة. عزيمته وإصراره على التغيير يلهم من حوله للعمل من أجل بيئة أنظف.
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+
+    <p>ايميل للتواصل: helpworld@gmail.com</p>
+
+    <p>&copy; 2026 حملتنا البيئية</p>
+
+  </footer>
+
+</body>
+
+</html>
